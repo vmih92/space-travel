@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { isValidEmail } from "../utils/Validate";
+import { isValidEmail } from "../utils/validate";
 
 export function JoinUs() {
   
