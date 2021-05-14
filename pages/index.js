@@ -119,7 +119,7 @@ export default function SpaceTravel() {
         }
         .space-story {
           background-color: orange;
-          align-items: baseline;
+          align-items: flex-start;
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
           min-height: 550px;
