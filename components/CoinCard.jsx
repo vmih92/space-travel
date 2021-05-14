@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import Rellax from "rellax";
 
-const imgPrefix = '/space-travel';
+const imgPrefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 export function CoinCard({ imgSrc, imgAlt, coinDesc, rellax }) {
   

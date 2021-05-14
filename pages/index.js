@@ -4,7 +4,7 @@ import Rellax from "rellax";
 import { JoinUs } from "../components/JoinUs";
 import { CoinCard } from "../components/CoinCard";
 
-const imgPrefix = '/space-travel';
+const imgPrefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 export default function SpaceTravel() {
 
@@ -29,6 +29,8 @@ export default function SpaceTravel() {
     <div>
       <Head>
         <title>Space Travel - To The Moon</title>
+        <link rel="shortcut icon" href={`${prefix}/favicon.ico`} />
+        <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=decive-width"/>
       </Head>
       <main>
         <section className="space-container">
