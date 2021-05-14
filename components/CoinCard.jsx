@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
 import Rellax from "rellax";
 
+const imgPrefix = '/space-travel';
+
 export function CoinCard({ imgSrc, imgAlt, coinDesc, rellax }) {
   
   const divRef = useRef();
@@ -13,7 +15,7 @@ export function CoinCard({ imgSrc, imgAlt, coinDesc, rellax }) {
 
   return (
     <div ref={divRef} className="card">
-      <img src={imgSrc} alt={imgAlt} className="image" />
+      <img src={imgPrefix + imgSrc} alt={imgAlt} className="image" />
       <p>{coinDesc}</p>
       <style jsx>{`
         .card {

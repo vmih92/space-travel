@@ -4,6 +4,8 @@ import Rellax from "rellax";
 import { JoinUs } from "../components/JoinUs";
 import { CoinCard } from "../components/CoinCard";
 
+const imgPrefix = '/space-travel';
+
 export default function SpaceTravel() {
 
   const [showHeading, setShowHeading] = useState(false);
@@ -30,10 +32,10 @@ export default function SpaceTravel() {
       </Head>
       <main>
         <section className="space-container">
-          <img src="/earth.png" alt="earth" className="the-earth" />
-          <img src="/moon.png" alt="moon" className="the-moon" />
-          <img src="/satellite.png" alt="satellite" className="the-satellite" />
-          <img src="/doge-rocket.png" alt="rocket" className="the-rocket" />
+          <img src={`${imgPrefix}/earth.png`} alt="earth" className="the-earth" />
+          <img src={`${imgPrefix}/moon.png`} alt="moon" className="the-moon" />
+          <img src={`${imgPrefix}/satellite.png`} alt="satellite" className="the-satellite" />
+          <img src={`${imgPrefix}/doge-rocket.png`} alt="rocket" className="the-rocket" />
           <h1 className="space-heading">To The Moon</h1>
           <svg className="svg-curve-top" xmlns="http://www.w3.org/2000/svg" fill="orange" viewBox="0 0 100 100" preserveAspectRatio="none" >
             <path d="M0,100 C65,93 76,10 100,100" />
