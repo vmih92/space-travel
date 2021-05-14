@@ -29,7 +29,7 @@ export default function SpaceTravel() {
     <div>
       <Head>
         <title>Space Travel - To The Moon</title>
-        <link rel="shortcut icon" href={`${prefix}/favicon.ico`} />
+        <link rel="shortcut icon" href={`${imgPrefix}/favicon.ico`} />
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=decive-width"/>
       </Head>
       <main>
